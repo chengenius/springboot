@@ -1,0 +1,21 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    db1:
+      url: jdbc:mysql://127.0.0.1:3306/jccompetition_sh?useUnicode=true&characterEncoding=utf8
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+    db2:
+      url: jdbc:mysql://127.0.0.1:3306/competition?userUnicode=true&characterEncoding=utf8
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+    db3:
+      url: jdbc:sqlserver://127.0.0.1:1433;DatabaseName=pddw
+      username: sa
+      password: 123456
+      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
