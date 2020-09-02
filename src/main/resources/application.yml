@@ -5,9 +5,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     db1:
-      url: jdbc:mysql://127.0.0.1:3306/jccompetition_sh?useUnicode=true&characterEncoding=utf8
-      username: root
-      password: root
+      url: jdbc:mysql://47.111.116.44:3306/jccompetition_sh?useUnicode=true&characterEncoding=utf8
+      username: jccompetition_sh
+      password: DWPFFHdehYiSZ62n
       driver-class-name: com.mysql.jdbc.Driver
     db2:
       url: jdbc:mysql://127.0.0.1:3306/competition?userUnicode=true&characterEncoding=utf8
@@ -15,7 +15,18 @@ spring:
       password: root
       driver-class-name: com.mysql.jdbc.Driver
     db3:
-      url: jdbc:sqlserver://127.0.0.1:1433;DatabaseName=pddw
+      url: jdbc:sqlserver://47.111.116.44:1433;DatabaseName=pddw
       username: sa
-      password: 123456
+      password: yunhua@123456
       driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+    timeout: 300
